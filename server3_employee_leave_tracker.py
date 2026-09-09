@@ -1,6 +1,6 @@
 import datetime
 
-from mcp.server.mcpserver import MCPServer
+from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, Field, field_validator
 from sqlalchemy import String, Integer, Date, select
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
@@ -54,7 +54,7 @@ async def init_db():
 # MCP SERVER
 # ============================================================
 
-mcp = MCPServer("leave-tracker-server")
+mcp = FastMCP("leave-tracker-server")
 
 
 # ---- STRUCTURED MODELS ----

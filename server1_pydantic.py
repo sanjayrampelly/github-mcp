@@ -1,7 +1,7 @@
-from mcp.server.mcpserver import MCPServer, Context
+from mcp.server.fastmcp import FastMCP, Context
 from pydantic import BaseModel, Field, field_validator
 
-mcp = MCPServer("tasks-server")
+mcp = FastMCP("tasks-server")
 
 tasks: list[dict] = []
 

@@ -1,8 +1,8 @@
 import httpx
-from mcp.server.mcpserver import MCPServer
+from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, Field, field_validator
 
-mcp = MCPServer("github-server")
+mcp = FastMCP("github-server")
 
 GITHUB_API = "https://api.github.com"
 

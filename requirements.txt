@@ -4,3 +4,8 @@ httpx
 #server3
 sqlalchemy
 aiosqlite
+
+#client
+langchain-mcp-adapters>=0.3.2
+langgraph>=0.2.0
+langchain-groq>=0.2.0

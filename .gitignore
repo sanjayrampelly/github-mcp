@@ -7,7 +7,11 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
 
 #dbs
 leave_tracker.db
+
+.vscode/
+
+.env

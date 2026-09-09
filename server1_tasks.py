@@ -1,7 +1,7 @@
-from mcp.server.mcpserver import MCPServer
+from mcp.server.fastmcp import FastMCP
 import asyncio
 
-mcp = MCPServer("tasks-server")
+mcp = FastMCP("tasks-server")
 
 tasks: list[dict] = []
 
